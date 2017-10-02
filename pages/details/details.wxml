@@ -1,0 +1,44 @@
+
+<view class="container">
+
+  <view class="card">
+    <view class="pic_block">
+      <image class="pic" mode="aspectFill" style="width:100%" src="{{card.i}}"></image>
+    </view>
+
+    <view class="baseinfo">
+      <view class="title">{{card.n}}</view>
+      <view class="iconfont">
+        <view class="star">
+          <view class="star-grey">
+            <view class="star star-icon" wx:for="{{[1,2,3,4,5]}}"></view>
+          </view>
+          <view class="star-yellow" style='width:{{card.r*20+0.5}}%'>
+            <view class="star star-icon" wx:for="{{[1,2,3,4,5]}}"></view>
+          </view>          
+        </view>
+      </view>
+      <view class="percost">人均{{card.c}}元</view>
+      <view class="distance">距离{{card.d}}米，步行约{{card.w}}分钟</view>
+    </view>
+
+    <view class="extinfo">
+      <view class="bottomalign">
+        <view class="tel_block">
+          <view class="iconfont tel_icon"></view>
+          <view class="telnum" bindtap="makeCall" data-tel="{{card.t}}">{{card.t}}</view>
+        </view>
+        <view class="loc_block">
+          <view class="iconfont loc_icon"></view>
+          <view class="loc" bindtap="getLoc" data-lat="{{card.lat}}" data-lon="{{card.lon}}" data-name="{{card.n}}">{{card.a}}</view>
+          <view class="underline"></view>
+        </view>
+      </view>
+    </view>
+  </view>
+  
+  <view class="btn_space">
+    <button class="home iconfont" bindtap="backHome" style="border: 0" plain="true"></button>
+    <button class="share iconfont" open-type="share" style="border: 0" plain="true"></button>
+  </view>
+</view>

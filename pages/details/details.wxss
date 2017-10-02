@@ -1,0 +1,171 @@
+/**index.wxss**/
+/* 配色标准：#333 #666 #999 */
+@font-face {
+  font-family: 'iconfont';  /* project id 348594 */
+  src: url('//at.alicdn.com/t/font_348594_9ih69xqdt3k81tt9.eot');
+  src: url('//at.alicdn.com/t/font_348594_9ih69xqdt3k81tt9.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_348594_9ih69xqdt3k81tt9.woff') format('woff'),
+  url('//at.alicdn.com/t/font_348594_9ih69xqdt3k81tt9.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_348594_9ih69xqdt3k81tt9.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family:"iconfont" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+}
+page{
+  height: 100%;
+  color: #333;
+}
+.container {
+  background-image: -webkit-radial-gradient(circle,#e63925,#af3724 80%);
+}
+/*  卡片整体 */
+.card {
+  width: 85%;
+  height: 80%;
+  background-color: white;
+  margin-top: 6%;
+  text-align: center;
+  border-radius: 10rpx;
+  overflow: hidden;
+  box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
+}
+.pic_block {
+  height: 35%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position:relative;
+}
+/* 基础信息 */
+.baseinfo {
+  height: 30%;
+}
+.title {
+  padding: 30rpx 0 0 0;
+  font-size: 18px;
+}
+.star {
+  margin: 6rpx auto;
+  display: inline-block;
+  position: relative;
+  line-height: 36rpx;
+}
+.star-grey {
+  color: #eee;
+}
+.star-yellow {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  /* color: black; */
+  white-space: nowrap;
+  color: #fff83e; 
+}
+.star-icon {
+  padding: 0 4px;
+}
+.star-icon::before {
+  content: "\e601";
+  font-size: 16px;
+}
+.percost {
+  margin-top: 16rpx;
+  color: #666;
+  font-size: 13px;
+}
+.distance {
+  margin-top: 15rpx;
+  color: #999;
+  font-size: 13px;
+}
+/* 附加信息 */
+.extinfo {
+  height: 35%;
+  position: relative;
+}
+.bottomalign {
+  position: absolute;
+  bottom: 30rpx;
+  width: 100%;
+  text-align: center;
+}
+
+.tel_icon::before {
+  font-size: 22px;
+  content: "\e614";
+}
+.telnum {
+  margin-top:10rpx;
+  font-size: 14px;
+}
+.loc_block {
+  margin-top: 32rpx;
+}
+.loc_icon::before {
+  font-size: 22px;
+  font-weight: medium;
+  content: "\e640";
+}
+.loc {
+  margin:4px auto 0;
+  font-size:14px;
+  width:85%;
+  text-align:center;
+}
+.underline {
+  border-top: 1px #333 solid;
+  width: 100rpx;
+  margin: 20rpx auto 0;
+}
+/* 操作区  */
+.btn_space {
+  height:12%;
+  width: 100%;
+  color: white;
+  position: relative;
+}
+.home {
+  margin:0;
+  padding:0;
+  position: absolute;
+  left: 21%;
+  width: 90rpx;
+  height: 90rpx; 
+  line-height: 95rpx;
+}
+.home::before {
+  font-size: 70rpx;
+  color: white;
+  content: "\e602";
+}
+.comment {
+  margin-left:0.5px;
+  right: 25%;
+  position:absolute;
+}
+.comment::before {
+  font-size: 60rpx;
+  content: '\e629';
+  /* content: "\e603"; */
+}
+/* share */
+.share::before {
+  color: white;
+  content: '\e629';
+  font-size: 55rpx;
+}
+.share{
+  margin:0;
+  padding:0;
+  position: absolute;
+  right: 21%;
+  top: 5rpx;
+  width: 90rpx;
+  height: 90rpx; 
+  line-height: 95rpx;
+}

@@ -1,0 +1,49 @@
+{
+	"description": "项目配置文件。",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true
+	},
+	"compileType": "weapp",
+	"libVersion": "1.5.2",
+	"appid": "wx538859245e31a8fa",
+	"projectname": "%E6%89%BE%E9%A4%90%E5%8A%A9%E6%89%8B",
+	"condition": {
+		"weapp": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "link",
+					"pathName": "pages/details/details",
+					"query": "pid=B0FFFP1TYH&i=http://store.is.autonavi.com/showpic/2cda0de7c8796eaef8fbff901af743d4&n=喜运茶餐厅(解放北路店)&a=解放北路598号(1号线公园前站i2出口步行5分钟,邻近动漫星城)&t=020-83382892&r=3.5&c=38&d=274&w=3&lat=23.129163&lon=113.264435",
+					"scene": "1008"
+				}
+			]
+		},
+		"search": {
+			"current": -1,
+			"list": [
+				{
+					"name": "test",
+					"pathName": "",
+					"title": "",
+					"cacheKey": ""
+				}
+			]
+		},
+		"conversation": {
+			"current": 0,
+			"list": [
+				{
+					"name": "test",
+					"query": "",
+					"boxQI": "",
+					"service": {}
+				}
+			]
+		}
+	}
+}

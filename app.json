@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/details/details"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#af3724",
+    "navigationBarTitleText": "找餐助手",
+    "navigationBarTextStyle": "white"
+  }
+}

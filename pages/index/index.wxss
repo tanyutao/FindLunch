@@ -1,0 +1,156 @@
+/**index.wxss**/
+page{
+  height: 100%;
+}
+.container {
+  height: 100%;
+  width: 100%;
+  background-image: -webkit-radial-gradient(circle,#e63925,#af3724 80%);
+}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.btn_block {
+  width: 100%;
+  margin-top: 350rpx;
+  text-align: center;
+}
+.hungerbutton {
+  width: 336rpx;
+  height: 290rpx;
+  border:none;
+  /* 居中 */
+  /* justify-content:center;
+  align-items:center; */
+}
+.btn_text {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+/* 显示与隐藏 */
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+/* 角标 */
+.footer {
+  position: absolute;
+  bottom: 20rpx;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.8);
+  letter-spacing: 1px;
+  font-size: 12px;
+}
+/* 加载条 */
+.ld_bar {
+  position: absolute;
+  width: 100%;
+  top: 280rpx;
+  text-align:center;
+  height:10rpx;
+}
+.ld_ball {
+  margin: 0 auto;
+  width: 200rpx;
+  overflow:hidden; 
+  /* 与加载条的top之和等于饭碗的top，数越小，跳的越高 */
+  padding-top: 50rpx;   
+}
+/* 加载动画效果  */
+.ld_ball,
+.ld_ball > view {
+    position: relative;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.ld_ball {
+    font-size: 0;
+    color: #fff;
+}
+.ld_ball.la-dark {
+    color: #333;
+}
+.ld_ball > view {
+    display: inline-block;
+    float: none;
+    background-color: currentColor;
+    border: 0 solid currentColor;
+}
+.ld_ball > view {
+    width: 50rpx;
+    height: 50rpx;
+    border-radius: 100%;
+    -webkit-animation: ball-pulse-sync .8s infinite ease-in-out;
+       -moz-animation: ball-pulse-sync .8s infinite ease-in-out;
+         -o-animation: ball-pulse-sync .8s infinite ease-in-out;
+            animation: ball-pulse-sync .8s infinite ease-in-out;
+}
+.ld_ball > view:nth-child(1) {
+    margin-left: -15rpx;
+    margin-top: 1rpx;
+    -webkit-animation-delay: -.2s;
+       -moz-animation-delay: -.2s;
+         -o-animation-delay: -.2s;
+            animation-delay: -.2s;
+}
+.ld_ball > view:nth-child(2) {
+   margin-left: 6rpx;
+   margin-top: 10rpx;
+    -webkit-animation-delay: -.1s;
+       -moz-animation-delay: -.1s;
+         -o-animation-delay: -.1s;
+            animation-delay: -.1s;
+}
+.ld_ball > view:nth-child(3) {
+  margin-left: 6rpx;
+  margin-top: 28rpx;
+    -webkit-animation-delay: 0s;
+       -moz-animation-delay: 0s;
+         -o-animation-delay: 0s;
+            animation-delay: 0s;
+}
+
+/*
+ * Animation
+ */
+@-webkit-keyframes ball-pulse-sync {
+    33% {
+        -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    66% {
+        -webkit-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+@keyframes ball-pulse-sync {
+    33% {
+        -webkit-transform: translateY(100%);
+           -moz-transform: translateY(100%);
+             -o-transform: translateY(100%);
+                transform: translateY(100%);
+    }
+    66% {
+        -webkit-transform: translateY(-100%);
+           -moz-transform: translateY(-100%);
+             -o-transform: translateY(-100%);
+                transform: translateY(-100%);
+    }
+    100% {
+        -webkit-transform: translateY(0);
+           -moz-transform: translateY(0);
+             -o-transform: translateY(0);
+                transform: translateY(0);
+    }
+}

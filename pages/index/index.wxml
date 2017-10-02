@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view class="btn_block">
+    <image class="hungerbutton" bindtap="startSearch" src="rice.png"></image>
+
+    <!-- 加载米饭 -->
+    <view class="ld_bar {{loading}}">
+      <view class="ld_ball">
+        <view></view>
+        <view></view>
+        <view></view>
+      </view>
+    </view>
+  </view>
+
+  <view class="footer" bindlongpress="egg">
+    <view wx:if="{{footer}}">解决吃饭选择困难症</view>
+    <view wx:else>baskeTTcase</view>
+  </view>
+</view>
